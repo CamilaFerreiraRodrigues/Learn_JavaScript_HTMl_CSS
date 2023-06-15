@@ -1,0 +1,20 @@
+*{  /*seletor all */
+
+    /*Para tirar os margin e padding que vem p padrao nos elementos*/
+    margin: 0;
+    padding: 0;
+}
+
+/*O ultimo elemento é quem é selecionado,nesse caso o p esta sendo selecionado*/
+/*duas selecioes foram feitas -> no p e o h1 com as mesma configurações*/
+body div section p, body div section h1  {
+    color: red;
+}
+
+/*para todo elemento que tiver a class x, vai ter o h2 selecionado e configurado*/
+
+/*usando a class como pai*/
+
+.main-content h1{
+    color: purple;
+}
