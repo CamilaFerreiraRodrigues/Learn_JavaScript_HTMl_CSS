@@ -1,0 +1,25 @@
+
+
+.title{
+    background-color: beige;
+
+    /*pato modelo que for mudar, mudar da seguinte forma*/
+    transition: all 1s ease-in-out;
+}
+.title:hover{
+    background-color: rgb(171, 71, 71);
+}
+
+
+input:focus{
+    background-color: pink;
+}
+
+.p1{
+    /*isso faz com que o p não seja displayed*/
+    display: none;
+}
+.input-checkbox:checked +p{
+    /*quando ativar a caixiha,vai aparecer o p*/
+    display: block;
+}

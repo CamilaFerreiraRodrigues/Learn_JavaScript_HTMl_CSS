@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table{
+            height: 20%;
+            width: 50%;
+
+            margin: 20px;
+            border-collapse: collapse; /*para tirar os espaçoes dad table*/
+        }
+
+        table th{
+            height: 10px;
+            background-color: rgb(179, 179, 179);
+            border: 3px solid gray;
+            padding: 10px;
+
+        }
+
+        table td{
+            height: 10px;
+            border: 3px solid gray;
+        }
+
+        tfoot{
+            background-color: rgb(227, 224, 224);
+            text-align: center;
+        }
+
+
+        caption{
+            caption-side: bottom;
+            text-align: left;
+            font-style: italic;
+            font-size: 10px;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+    <!--
+            TABLE
+        TR-> linhas
+        TD-> célula
+        Thead->  cabeçalho
+        tbody-> conteudo da table
+        tfoot-> rodapé
+    -->
+    <table>
+
+        <caption>descrição da table</caption>
+
+        <thead class="cabeca"> <!--cabeçalho-->
+            <tr class="linha"><!-- linha-->
+                <th>Titulo 1</th>  <!--célula-->          
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+        </thead>
+
+        <tbody class="corpo">
+            <tr>
+                <td rowspan="2">dado 1</td>  <!--rowspan para um cell ocupar duas linhas-->          
+                <td>dado 2</td><!--célula-->
+                <td>dado 3</td>
+            </tr>
+            <tr>        
+                <td>dado 2</td> <!--célula-->
+                <td>dado 3</td>
+            </tr>
+          
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">rodapé</td>  <!--uma cell ocupando as tres colunas-->        
+
+            </tr>
+            </tr>
+        </tfoot>
+</table>
+</body>
+</html>

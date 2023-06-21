@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    font: sans-serif;
+    font-size: 20px;
+ }
+
+ /*essa aqui é a div que "pai" */
+ .grid{
+    display: grid;
+
+    /*
+    pode-se usar a unidade Fr (fração) -> que divide o espaço proporcinalmente entre elas
+    -> pode-se usar "repeat(10, 1fr)"
+    -> pode também colocar mais de umn fr para ele enteder que há mais de uma parte
+    */
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+ .grid div{
+    background: tomato;
+    min-height: 50px;
+    
+ }
+ .grid div:nth-child(5){
+   background: darkred;
+   /*
+   -> para dizer onde começa e onde acaba a div
+   */
+   grid-column-start: 2;
+   grid-column-end: 4;
+ }
+
+ @media(max-width: 768px){
+   .grid div:nth-child(5){
+      grid-column-start: span 1;
+     
+    }
+ }

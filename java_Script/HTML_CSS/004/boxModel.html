@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-model</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;     
+             box-sizing: border-box; /*isso faz que as propriedades ñ seja ajustadas para fora e siim dentro do width e heigth que foi definido*/
+        }
+
+        .section-one{
+            
+            width: 200px;
+            height: 150px;
+            background: deeppink;
+            border-style: solid;
+            border-width: 5px;
+            border-top-width: 10px;
+            border-left-color: yellow;
+            border-top-color: blue;
+            border-right-color: green;
+            border-bottom-color:red ;
+            padding: 10px 50px 20px 37px; /*sentido horário*/
+            margin: 10px;
+      
+        }
+        .section-two{
+            width: 200px;
+            height: 150px;
+            background: cyan;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+     <section class="section-one">Lorem ipsum dolor sit amet consectetur adipisicing elit.</section>
+     <section class="section-two">2</section>
+</body>
+</html>

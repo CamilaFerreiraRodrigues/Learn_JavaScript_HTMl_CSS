@@ -1,0 +1,7 @@
+.texto{
+    background-color: yellow;
+    width: 220px;
+    height: 220px;
+    overflow-y: auto;
+    
+}
