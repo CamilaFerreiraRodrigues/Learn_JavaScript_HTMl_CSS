@@ -38,10 +38,15 @@
    grid-column-start: 2;
    grid-column-end: 4;
  }
+ .grid div:nth-child(10){
+   background-color: beige;
+   grid-row: span 2;
+ }
 
  @media(max-width: 768px){
    .grid div:nth-child(5){
       grid-column-start: span 1;
+
      
     }
  }
