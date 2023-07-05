@@ -30,7 +30,6 @@ function f6(callback){
 
 f4(f4Callback);
 
-
 function f4Callback(){
     f5(f5Callback);
 }
