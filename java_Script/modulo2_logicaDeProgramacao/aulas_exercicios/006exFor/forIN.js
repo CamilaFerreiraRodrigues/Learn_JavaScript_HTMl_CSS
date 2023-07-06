@@ -1,4 +1,4 @@
-//FOR IN --> lê os indices (arrays) ou chaves (obj) 
+//FOR IN --> lê os INDICES (arrays) ou chaves (obj) 
 
 // COM ARRAYS
 

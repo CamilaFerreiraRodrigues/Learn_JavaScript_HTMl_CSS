@@ -1,4 +1,4 @@
-// FOR OF --> com strings e arrays 
+// FOR OF --> com strings e arrays -> lê O QUE ESTÁ NOS INDICES
 
 const nome = 'Camila ferreira'
 
