@@ -5,7 +5,7 @@ function criaCalculadora(){ // factory function
     return{
         
         /*
-        PROPRIEDADES -> variavesi associadas ao objeto
+        PROPRIEDADES -> variaveis associadas ao objeto
         METODOS -> funções associadas ao objetos
         */
         display: document.querySelector('.display'), //selecionanodo o inpput
