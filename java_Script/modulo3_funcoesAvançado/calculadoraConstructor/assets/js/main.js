@@ -14,8 +14,8 @@ function Calculadora (){
 
     //  outros metodos -> ações da calculadora 
     this.cliqueBotoes = function(){
-        document.addEventListener('click', e => {
-            const el = e.target;
+        document.addEventListener('click', event => {
+            const el = event.target;
 
             // se o que está sendo clicado tem clase "btn-num"
             if(el.classList.contains('btn-num')){
