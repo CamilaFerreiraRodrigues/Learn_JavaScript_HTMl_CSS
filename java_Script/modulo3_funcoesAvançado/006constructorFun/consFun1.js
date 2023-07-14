@@ -11,7 +11,6 @@
 
 function Pessoa (nome, sobronome){
 
-    //  atributos Privadas -> não estão disponiveis fora da constructor funtion
     const ID =12345;
     const metodoInterno = function() {
 
